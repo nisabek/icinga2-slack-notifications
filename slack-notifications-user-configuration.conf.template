@@ -1,0 +1,18 @@
+template Notification "slack-notifications-user-configuration" {
+    import "slack-notifications-default-configuration"
+
+    vars.slack_notifications_webhook_url = "<YOUR SLACK WEBHOOK URL>, e.g. https://hooks.slack.com/services/TOKEN1/TOKEN2"
+    vars.slack_notifications_icinga2_base_url = "<YOUR ICINGA2 BASE URL>, e.g. http://icinga-web.yourcompany.com/icingaweb2"
+}
+
+template Notification "slack-notifications-user-configuration-hosts" {
+    import "slack-notifications-default-configuration-hosts"
+
+    interval = 1m
+}
+
+template Notification "slack-notifications-user-configuration-services" {
+    import "slack-notifications-default-configuration-services"
+
+    interval = 3m
+}
