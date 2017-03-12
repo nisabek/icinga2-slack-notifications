@@ -7,12 +7,8 @@ template Notification "slack-notifications-user-configuration" {
 
 template Notification "slack-notifications-user-configuration-hosts" {
     import "slack-notifications-default-configuration-hosts"
-
-    interval = 1m
 }
 
 template Notification "slack-notifications-user-configuration-services" {
     import "slack-notifications-default-configuration-services"
-
-    interval = 3m
 }

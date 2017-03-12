@@ -7,7 +7,7 @@ DEBUG='false'
 
 clean() {
     mkdir -p target
-    rm -r target/*
+    rm -rf target/*
 }
 
 build_package() {
