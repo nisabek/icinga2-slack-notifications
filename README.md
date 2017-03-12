@@ -7,6 +7,9 @@ Native, easy to use Icinga2 `NotificationCommand` to send Host and Service notif
 
 ## What will I get?
 
+![Notification-Examples](/docs/Notification-Examples.png?raw=true "Notification-Examples")
+
+
 * Notifications inside Slack about your Host and Service state changes
 * In case of failure get notified with the nicely-formatted output of the failing check
 * Easy integration with Icinga2
