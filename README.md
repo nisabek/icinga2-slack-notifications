@@ -6,9 +6,7 @@ Icinga2 notification integration with slack
 Native, easy to use Icinga2 `NotificationCommand` to send Host and Service notifications to pre-configured Slack channel - with only 1 external dependency: `curl`
 
 ## What will I get?
-
-![Notification-Examples](/docs/Notification-Examples.png?raw=true "Notification-Examples")
-
+<img src="https://github.com/nisabek/icinga2-slack-notifications/raw/master/docs/Notification-Examples.png" width="400">
 
 * Notifications inside Slack about your Host and Service state changes
 * In case of failure get notified with the nicely-formatted output of the failing check
