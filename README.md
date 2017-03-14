@@ -89,14 +89,15 @@ In order to enable a feature use
 
 1. Configure Slack Webhook and Icinga2 web URLs in `/etc/icinga2/conf.d/slack-notifications/slack-notifications-user-configuration.conf`
 ``` 
+
 template Notification "slack-notifications-user-configuration" {
     import "slack-notifications-default-configuration"
 
     vars.slack_notifications_webhook_url = "<YOUR SLACK WEBHOOK URL>, e.g. https://hooks.slack.com/services/TOKEN1/TOKEN2"
     vars.slack_notifications_icinga2_base_url = "<YOUR ICINGA2 BASE URL>, e.g. http://icinga-web.yourcompany.com/icingaweb2"
 }
-
 ...
+
 ```
 
 2. In order to enable the slack-notifications **for Services** add `vars.slack_notifications = "enabled"` to your Service template, e.g. in `/etc/icinga2/conf.d/templates.conf`
@@ -114,6 +115,7 @@ template Notification "slack-notifications-user-configuration" {
 In order to enable the slack-notifications **for Hosts** add `vars.slack_notifications = "enabled"` to your Host template, e.g. in `/etc/icinga2/conf.d/templates.conf`
 
 ```
+ 
  template Host "generic-host" {
    max_check_attempts = 5
    check_interval = 1m
@@ -121,6 +123,7 @@ In order to enable the slack-notifications **for Hosts** add `vars.slack_notific
  
    vars.slack_notifications = "enabled"
  }
+ 
  ```
 
 2. Further customizations [_optional_]
@@ -131,6 +134,7 @@ You can customize the following parameters of slack-notifications :
   * slack_notifications_plugin_output_max_length [Default: `3500`]
   * slack_notifications_icon_dictionary [Default:
    ```
+     
      {
          "DOWNTIMEREMOVED" = "leftwards_arrow_with_hook",
          "ACKNOWLEDGEMENT" = "ballot_box_with_check",
@@ -142,6 +146,7 @@ You can customize the following parameters of slack-notifications :
          "FLAPPINGEND" = "small_red_triangle_down",
          "CUSTOM" = "speaking_head_in_silhouette"
      }
+ 
    ```
   ]
 
@@ -157,6 +162,7 @@ The `slack-notifications-user-configuration` section applies to both Host and Se
 _Example channel name configuration for Service notifications_
 
 ``` 
+
 template Notification "slack-notifications-user-configuration" {
     import "slack-notifications-default-configuration"
 
@@ -177,6 +183,7 @@ template Notification "slack-notifications-user-configuration-services" {
     
     vars.slack_notifications_channel = "#monitoring_alerts_for_service"
 }
+
 ```
 
 You can choose to override the whole icon dictionary, or override specific types only:
@@ -184,6 +191,7 @@ You can choose to override the whole icon dictionary, or override specific types
 _Example override the whole icon dictionary_
 
 ```
+
 template Notification "slack-notifications-user-configuration" {
     import "slack-notifications-default-configuration"
 
@@ -202,10 +210,12 @@ template Notification "slack-notifications-user-configuration" {
        "CUSTOM" = "speaking_head_in_silhouette"
     }    
     ...
+    
 ```
 
 _Example override specific type_
 ```
+
 template Notification "slack-notifications-user-configuration" {
     import "slack-notifications-default-configuration"
 
@@ -216,6 +226,7 @@ template Notification "slack-notifications-user-configuration" {
     vars.slack_notifications_icon_dictionary.CUSTOM = "cherries"
     ...
 }
+
 ```
 
 If you, for some reason, want to disable the slack-notifications from icinga2 change the following parameter inside the 
