@@ -1,0 +1,28 @@
+name: icinga2-slack-notifications
+description: "file:///README.md"
+url: "https://github.com/nisabek/icinga2-slack-notifications"
+tags: Slack, notification, NotificationCommand, Monitoring, CheckCommand, Alarm, Alerting, Alert
+vendor: Icinga
+target: Icinga Web 2
+type: Notification, Notification Command
+licence: apache2
+releases:
+  -
+    name: 1.0
+    description: "1.0 Release"
+    files:
+      -
+        name: slack-notifications-command.conf
+        url: "file:///src/slack-notifications/slack-notifications-command.conf"
+        description: "NotificationCommand implementation for slack-notifications"
+        checksum: 7ebc382c6d0db1b1348367f6be218c40
+      -
+        name: slack-notifications-configuration.conf
+        url: "file:///src/slack-notifications/slack-notifications-configuration.conf"
+        description: "NotificationCommand configurations for slack-notifications"
+        checksum: 4dee798b706ef6e69212da3e6b4f3d18
+      -
+        name: slack-notifications-user-configuration.conf.template
+        url: "file:///src/slack-notifications/slack-notifications-user-configuration.conf.template"
+        description: "User configuration template for slack-notifications"
+        checksum: b847baac9208e52ec918c6be4fcbfa91
