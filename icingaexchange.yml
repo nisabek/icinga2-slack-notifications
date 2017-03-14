@@ -5,7 +5,7 @@ tags: Slack, notification, NotificationCommand, Monitoring, CheckCommand, Alarm,
 vendor: Icinga
 target: Icinga Web 2
 type: Notification, Notification Command
-licence: apache2
+license: apache2
 releases:
   -
     name: 1.0
