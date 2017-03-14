@@ -129,6 +129,19 @@ You can customize the following parameters of slack-notifications :
   * slack_notifications_channel [Default: `#monitoring_alerts`]
   * slack_notifications_botname [Default: `icinga2`]
   * slack_notifications_plugin_output_max_length [Default: `3500`]
+  * slack_notifications_icon_dictionary [Default: ```
+                                            {
+                                                "DOWNTIMEREMOVED" = "leftwards_arrow_with_hook",
+                                                "ACKNOWLEDGEMENT" = "ballot_box_with_check",
+                                                "PROBLEM" = "red_circle",
+                                                "RECOVERY" = "large_blue_circle",
+                                                "DOWNTIMESTART" = "arrow_up_small",
+                                                "DOWNTIMEEND" = "arrow_down_small",
+                                                "FLAPPINGSTART" = "small_red_triangle",
+                                                "FLAPPINGEND" = "small_red_triangle_down",
+                                                "CUSTOM" = "speaking_head_in_silhouette"
+                                            }
+                                          ```]
 
 In order to do so, place the desired parameter into `slack-notifications-user-configuration.conf` file.
 
@@ -161,6 +174,45 @@ template Notification "slack-notifications-user-configuration-services" {
     interval = 3m
     
     vars.slack_notifications_channel = "#monitoring_alerts_for_service"
+}
+```
+
+You can choose to override the whole icon dictionary, or override specific types only:
+
+_Example override the whole icon dictionary_
+
+```
+template Notification "slack-notifications-user-configuration" {
+    import "slack-notifications-default-configuration"
+
+    vars.slack_notifications_webhook_url = "https://hooks.slack.com/services/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"
+    vars.slack_notifications_icinga2_base_url = "http://localhost:80/icingaweb2"
+    vars.slack_notifications_channel = "#icinga2-private-test"
+    vars.slack_notifications_icon_dictionary = {
+       "DOWNTIMEREMOVED" = "leftwards_arrow_with_hook",
+       "ACKNOWLEDGEMENT" = "ballot_box_with_check",
+       "PROBLEM" = "bomb",
+       "RECOVERY" = "large_blue_circle",
+       "DOWNTIMESTART" = "up",
+       "DOWNTIMEEND" = "arrow_double_down",
+       "FLAPPINGSTART" = "small_red_triangle",
+       "FLAPPINGEND" = "small_red_triangle_down",
+       "CUSTOM" = "speaking_head_in_silhouette"
+    }    
+    ...
+```
+
+_Example override specific type_
+```
+template Notification "slack-notifications-user-configuration" {
+    import "slack-notifications-default-configuration"
+
+    vars.slack_notifications_webhook_url = "https://hooks.slack.com/services/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"
+    vars.slack_notifications_icinga2_base_url = "http://localhost:80/icingaweb2"
+    vars.slack_notifications_channel = "#icinga2-private-test"
+
+    vars.slack_notifications_icon_dictionary.CUSTOM = "cherries"
+    ...
 }
 ```
 
