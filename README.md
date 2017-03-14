@@ -129,19 +129,21 @@ You can customize the following parameters of slack-notifications :
   * slack_notifications_channel [Default: `#monitoring_alerts`]
   * slack_notifications_botname [Default: `icinga2`]
   * slack_notifications_plugin_output_max_length [Default: `3500`]
-  * slack_notifications_icon_dictionary [Default: ```
-                                            {
-                                                "DOWNTIMEREMOVED" = "leftwards_arrow_with_hook",
-                                                "ACKNOWLEDGEMENT" = "ballot_box_with_check",
-                                                "PROBLEM" = "red_circle",
-                                                "RECOVERY" = "large_blue_circle",
-                                                "DOWNTIMESTART" = "arrow_up_small",
-                                                "DOWNTIMEEND" = "arrow_down_small",
-                                                "FLAPPINGSTART" = "small_red_triangle",
-                                                "FLAPPINGEND" = "small_red_triangle_down",
-                                                "CUSTOM" = "speaking_head_in_silhouette"
-                                            }
-                                          ```]
+  * slack_notifications_icon_dictionary [Default:
+   ```
+     {
+         "DOWNTIMEREMOVED" = "leftwards_arrow_with_hook",
+         "ACKNOWLEDGEMENT" = "ballot_box_with_check",
+         "PROBLEM" = "red_circle",
+         "RECOVERY" = "large_blue_circle",
+         "DOWNTIMESTART" = "arrow_up_small",
+         "DOWNTIMEEND" = "arrow_down_small",
+         "FLAPPINGSTART" = "small_red_triangle",
+         "FLAPPINGEND" = "small_red_triangle_down",
+         "CUSTOM" = "speaking_head_in_silhouette"
+     }
+   ```
+  ]
 
 In order to do so, place the desired parameter into `slack-notifications-user-configuration.conf` file.
 
