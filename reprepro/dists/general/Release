@@ -1,0 +1,29 @@
+Origin: icinga2-slack-notifications
+Label: icinga2-slack-notifications Github
+Suite: stable
+Codename: general
+Date: Thu, 16 Mar 2017 05:52:13 UTC
+Architectures: amd64 i386
+Components: main
+Description: icinga2-slack-notifications deb repository
+MD5Sum:
+ dc18730bfe8cf7507c92566c5f457875 771 main/binary-amd64/Packages
+ ab1ef1508d49e8dd161c6d8fb28b4fc8 463 main/binary-amd64/Packages.gz
+ 5c6d46b669181b098cfa703e1de3b2ca 186 main/binary-amd64/Release
+ dc18730bfe8cf7507c92566c5f457875 771 main/binary-i386/Packages
+ ab1ef1508d49e8dd161c6d8fb28b4fc8 463 main/binary-i386/Packages.gz
+ 5b671d034e503a59c564cdf6968a8665 185 main/binary-i386/Release
+SHA1:
+ 7485ba97625b2c5863056c2c755508c6f2370118 771 main/binary-amd64/Packages
+ ae81fff4ad1a5d038670baf9210694537ba0341c 463 main/binary-amd64/Packages.gz
+ 0f1c1cf6a1586e58201167ef3b714fd3ac2e894d 186 main/binary-amd64/Release
+ 7485ba97625b2c5863056c2c755508c6f2370118 771 main/binary-i386/Packages
+ ae81fff4ad1a5d038670baf9210694537ba0341c 463 main/binary-i386/Packages.gz
+ d562f3f4703aa5c74667fe32935cc4232c8bd2d2 185 main/binary-i386/Release
+SHA256:
+ e861d2195cdef95dec79b1588dd983ef6b5b4d21c8a25bcfd70276e771c11e0d 771 main/binary-amd64/Packages
+ cb13e2587ba46b5751f83a62b68a999ffd2c0543ca2fd85ee0161c7735cba0ae 463 main/binary-amd64/Packages.gz
+ 180bc8059ed5636d449bf4ece649a5baf88e30a0a868053ca736231b4129569a 186 main/binary-amd64/Release
+ e861d2195cdef95dec79b1588dd983ef6b5b4d21c8a25bcfd70276e771c11e0d 771 main/binary-i386/Packages
+ cb13e2587ba46b5751f83a62b68a999ffd2c0543ca2fd85ee0161c7735cba0ae 463 main/binary-i386/Packages.gz
+ c16c63bb711538b3157568fbdb9bcac711fe67e0d11cca67b080e218e6a9e29c 185 main/binary-i386/Release
