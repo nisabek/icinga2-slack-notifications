@@ -5,7 +5,7 @@ Icinga2 notification integration with slack
 
 Native, easy to use Icinga2 `NotificationCommand` to send Host and Service notifications to pre-configured Slack channel - with only 1 external dependency: `curl`
 
-Also available on [Icinga2 exchange portal](https://exchange.icinga.com/richardhauswald/icinga2-slack-notifications)
+Also available on<a href="https://exchange.icinga.com/richardhauswald/icinga2-slack-notifications" target="_blank">Icinga2 exchange portal</a>
 
 ## What will I get?
 * Awesome Slack notifications:
