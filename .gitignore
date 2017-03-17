@@ -3,3 +3,4 @@ slack-notifications-user-configuration.conf
 .idea/
 .vagrant/
 target
+.vagrant

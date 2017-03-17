@@ -8,8 +8,8 @@ type: Notification, Notification Command
 license: apache2
 releases:
   -
-    name: 1.0
-    description: "1.0 Release"
+    name: 1.0.4
+    description: "1.0.4 Release"
     files:
       -
         name: slack-notifications-command.conf
