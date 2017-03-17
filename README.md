@@ -123,6 +123,10 @@ In order to enable the slack-notifications **for Hosts** add `vars.slack_notific
  }
  ```
 
+Make sure to restart icinga after the changes
+
+`systemctl restart icinga2`
+
 2. Further customizations [_optional_]
 
 You can customize the following parameters of slack-notifications :
