@@ -1,0 +1,6 @@
+Archive: stable
+Component: main
+Origin: icinga2-slack-notifications
+Label: icinga2-slack-notifications Github
+Architecture: amd64
+Description: icinga2-slack-notifications deb repository

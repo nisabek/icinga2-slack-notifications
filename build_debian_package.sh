@@ -2,7 +2,7 @@
 set -u
 set -e
 
-VERSION='1.0.0'
+VERSION='1.0.4'
 DEBUG='false'
 
 clean() {
@@ -20,6 +20,7 @@ build_package() {
         --deb-no-default-config-files \
         --deb-user 'root' \
         --deb-group 'nagios' \
+        --depends 'icinga2' \
         --depends 'curl' \
         --architecture 'all' \
         --name 'icinga2-slack-notifications' \
