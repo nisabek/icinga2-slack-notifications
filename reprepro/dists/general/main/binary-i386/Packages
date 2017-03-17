@@ -10,10 +10,10 @@ Homepage: https://github.com/nisabek/icinga2-slack-notifications
 Priority: extra
 Section: universe/admin
 Filename: pool/main/i/icinga2-slack-notifications/icinga2-slack-notifications_1.0.0_all.deb
-Size: 3454
-SHA256: cbfc830b79da4081c08dcdeb43c8170f9c61980aae5b8e2a82820e4212413793
-SHA1: 79f659cef17dc39de9f888610336843098963030
-MD5sum: 61d9bc7c46aab05889e12f8b115cb53e
+Size: 3510
+SHA256: 2cc45f961f880fafe4149e434a0c47dce36ec86f00218cefd6b10f5f849dacc0
+SHA1: 7ae5e162a06cd967e90cdb28807f0df93eb28eea
+MD5sum: 549cbaf973d7348aa14594f4b7f34f76
 Description: Icinga2 notification integration with slack
 Bugs: https://github.com/nisabek/icinga2-slack-notifications/issues
 

@@ -1,3 +1,6 @@
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA256
+
 Origin: icinga2-slack-notifications
 Label: icinga2-slack-notifications Github
 Suite: stable
@@ -27,3 +30,21 @@ SHA256:
  64cc31768336c15f19d9678723115fd7df84582763814bf876a742084c802b28 771 main/binary-i386/Packages
  e2cf508e9ddb77cbe5fa2f610b449483b4a86ffbeff474e0c1b1a16988a5a2fe 460 main/binary-i386/Packages.gz
  c16c63bb711538b3157568fbdb9bcac711fe67e0d11cca67b080e218e6a9e29c 185 main/binary-i386/Release
+-----BEGIN PGP SIGNATURE-----
+Version: GnuPG v2.1
+Comment: GPGTools - http://gpgtools.org
+
+iQIcBAEBCAAGBQJYy6mBAAoJEJDbbJkQd5q0hsMQAK4PJyXLDAxGknJ8kXlrbJq/
+Yp5kMgrBz5ETex8GrXKtRSuUaI9P8yhLikVoIYo6+HI6t9ZeRT0zmXIWWyIarinp
+WCoYbHDjosy/IZ+0kxkXmfEM5ZHbmvxUpqDQz9ftDmPFC3XZ+I1ooJAtuK+I/YMy
+U2lxpRFQTphKLAA9CBHhi/m+U+dYsKiqaf7grFgWhOU7yUaeCn2YFiw7ghy6SBL9
+cD0q0my9xV9+xCFrC6ObXOiOJ3fA5qPX+ceB31akH01RMjPr2ofIg46lvHl2tIR0
+T47eDQDKgaaBmEnxoLnuX/OhPHTaslqktvp1FdQ3anvPXV2VRYQ8sFpAPDjU+wQZ
+fZF2capX/9dgZ/Wezzq1ibOXswH6uMe+iI/JdGnpvMua1mTaCSStoNrfVN+kyExf
+onz+7XJx5rzesj6YE5pTHGzSoshacb9by++sTHUJ+iA9zrshOr72+1HisvWt8tK7
+gExcaG6zK7TUKsrKbXjJ/DSBcFuKVEsZUZwVQNJDk1VmoI27nPSjt5mdQL2Dl1mG
+TNl+6O2QqBtJI+7ah45WJXv8P6knoPHld7KLbjQbSR+rnZCMm+1xE1l9sabp4noV
+MoYdFmWlxaNQ+ymvqEHi0tIan9n4WvxSN32xJqB/5szrIk3xCk40NhizyLdzgx6o
+u0b26/t7M7hUHRnO93TJ
+=6vUH
+-----END PGP SIGNATURE-----

@@ -5,3 +5,4 @@ Codename: general
 Architectures: amd64 i386
 Components: main
 Description: icinga2-slack-notifications deb repository
+SignWith: yes
