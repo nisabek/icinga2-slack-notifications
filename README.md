@@ -1,3 +1,9 @@
+<!--
+  Title: Icinga Slack Notifications
+  Description: Icinga 2 notification integration with slack
+  Author: nisabek richard.hauswald
+  -->
+
 # icinga2-slack-notifications
 Icinga2 notification integration with slack
 
