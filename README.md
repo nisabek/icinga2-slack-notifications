@@ -50,7 +50,23 @@ We found the following 2 existing Icinga2 to Slack integrations.
 
 ### Installation using Debian package
 
-1. TBD
+We use [reprepro](https://mirrorer.alioth.debian.org/) to distribute our package from github.
+You would need to install `apt-transport-https` that supports adding an `https` based repository to the debian repo list.
+
+here are the steps to perform:
+
+```
+apt-get install -y apt-transport-https
+apt-key adv --keyserver keyserver.ubuntu.com --recv-keys 10779AB4
+add-apt-repository "deb https://raw.githubusercontent.com/nisabek/icinga2-slack-notifications/master/reprepro general main"
+apt-get update
+```
+
+You are now ready to install the plugin with 
+
+`apt-get install icinga2-slack-notifications`
+
+This will create the plugin files in the correct `icinga2` conf directory. 
 
 ### Installation using git
 
