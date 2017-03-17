@@ -5,6 +5,8 @@ Icinga2 notification integration with slack
 
 Native, easy to use Icinga2 `NotificationCommand` to send Host and Service notifications to pre-configured Slack channel - with only 1 external dependency: `curl`
 
+Also available on<a href="https://exchange.icinga.com/richardhauswald/icinga2-slack-notifications" target="_blank">Icinga2 exchange portal</a>
+
 ## What will I get?
 * Awesome Slack notifications:
 <p align="center">
@@ -88,14 +90,13 @@ In order to enable a feature use
 #### Notification configuration
 
 1. Configure Slack Webhook and Icinga2 web URLs in `/etc/icinga2/conf.d/slack-notifications/slack-notifications-user-configuration.conf`
-``` 
+```
 template Notification "slack-notifications-user-configuration" {
     import "slack-notifications-default-configuration"
 
     vars.slack_notifications_webhook_url = "<YOUR SLACK WEBHOOK URL>, e.g. https://hooks.slack.com/services/TOKEN1/TOKEN2"
     vars.slack_notifications_icinga2_base_url = "<YOUR ICINGA2 BASE URL>, e.g. http://icinga-web.yourcompany.com/icingaweb2"
 }
-
 ...
 ```
 
@@ -209,6 +210,7 @@ template Notification "slack-notifications-user-configuration" {
 ```
 
 _Example override specific type_
+
 ```
 template Notification "slack-notifications-user-configuration" {
     import "slack-notifications-default-configuration"
