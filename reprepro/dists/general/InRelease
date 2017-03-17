@@ -5,7 +5,7 @@ Origin: icinga2-slack-notifications
 Label: icinga2-slack-notifications Github
 Suite: stable
 Codename: general
-Date: Fri, 17 Mar 2017 10:06:30 UTC
+Date: Fri, 17 Mar 2017 10:13:31 UTC
 Architectures: amd64 i386
 Components: main
 Description: icinga2-slack-notifications deb repository
@@ -34,17 +34,17 @@ SHA256:
 Version: GnuPG v2.1
 Comment: GPGTools - http://gpgtools.org
 
-iQIcBAEBCAAGBQJYy7U1AAoJEJDbbJkQd5q0qicP/1BLjJzLcAqCZuycazxH6R/g
-4CpCcE1hqWNl2gRNaM2MsHWzDRcrMd6jAhidAiUJtuHtNtqfAnCdg7uNietz+e0O
-UePVOQRV4VMffIuJVEDpYYfe3r2M82wQx4R+Lub+aN/heUeusbT1Hi0l47EQf6ej
-LvgINV0Gq7bjKvsY7vLqHpzFSqwZYOjfI1f0XehKnD1QGKCjgrBaUcyKPiUZEw6n
-sGjzdVS8Sl1QICzN3uDKt/zElqVB/XQBzdi9PTao4dPhZfj3hhA1ok/uCN4io7R7
-XvJL+Wg+oy82n8mA0PEPBT+HZ8mxIdnHFgTpNp1kfGEbxjV6HTJOa5MkXVLh111B
-j9JGFzvzjONgffXJyxmP2sLlovOr/++N504JpvM02bx6LBNFHONehxxf/VkTGNNf
-kzzH8zfWS5Q8wtlUqJfcdhigcjca7c5F2GPfU/bSFAgvrGIJUvPmq283dgsWnOvG
-LEAbmmmqdP1diWG1A8svPU5vKxl/iMdEOoYLBV83kXRw17CGMM93Gx6muUyD5tgh
-9J5NwOm9xP3sTNvsFG+yPbgfLg4xjHHzQenF//1D9y7eOXMFTIAug3ToycRa+am6
-2BX+1/KHGrphFsK5czrpTo8rG90jzsMbAmmFFnMx7kWfaj3rwbBSXwySfMHbcFo7
-ibvGJl33dfK9SgitBV8e
-=kCVH
+iQIcBAEBCAAGBQJYy7bLAAoJEJDbbJkQd5q00jEQAI53INf7XFkaKqDNfMLoCuNY
+onIqIzimtmwI6h14aws+9Qkm9ZrFSY7OZkvFdlObJ2a5zue39D+ORxhu+F87CEbB
+zweQQX2ryWYA8lbQpwsPD9MBq2krjQbvcTHfy6Fx9R9tHg8sZ2R9u/vZd0TdNo5a
+A4L3xLAaZmWfWvO1jh47kOETBk5tmDW+iw/qEF6lN3Yi5LZz4tCHvxzs25Fft5bn
+YXDsNNBbQ+gkd7RnZr35LgFZB6wdbN6lemEEgtgacyLlaSG6d5mhDuXyxPNKtnTC
+RspedJcSnHkTYR+uYOsZD1k8HOfmL3MS2AC+aI//SYyPoJw8rtX3hvq0f+4RKJp0
+Et+x8rbvq5RYEalQpK4i/MiwqRdfAm/Rcg0ly38EN2vCBm+vq+NcQHaiWIZ3F2h2
+iGNbxw9WhGOcR0RHuhoIvrjvqrhDZH7Gg2tRpBkWjHv0/UtnZ06uJXpKCcNB3GvL
+pWGZeH5rueI4ZqkcmlPy0XPfXKrRBU4EZq3iY13qWT07Z2qjjZM8MbIugGynfkDJ
+folBsVl73ukRktf45uEiQ4AUokslaZ1k4ff3Zn2n+peAmMSjeMqf8q8T1thm9pT9
+4GwuORyf3+UbfjDomfWK56Ec+vZC3Mk4tp4bCn5bCFeDGB7RSNuxSQpzxwjyPDj6
+sYRxS3Ezeo1X+SxckOgy
+=tM1v
 -----END PGP SIGNATURE-----

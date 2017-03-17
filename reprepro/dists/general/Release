@@ -2,7 +2,7 @@ Origin: icinga2-slack-notifications
 Label: icinga2-slack-notifications Github
 Suite: stable
 Codename: general
-Date: Fri, 17 Mar 2017 10:06:30 UTC
+Date: Fri, 17 Mar 2017 10:13:31 UTC
 Architectures: amd64 i386
 Components: main
 Description: icinga2-slack-notifications deb repository
