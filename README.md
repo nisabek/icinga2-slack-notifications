@@ -9,13 +9,17 @@ Also available on <a href="https://exchange.icinga.com/richardhauswald/icinga2-s
 
 ## What will I get?
 * Awesome Slack notifications:
+
 <p align="center">
   <img src="https://github.com/nisabek/icinga2-slack-notifications/raw/master/docs/Notification-Examples.png" width="600">
 </p>
+
 * Mobile Icinga monitoring alerts as well:
+
 <p align="center">
   <img src="https://github.com/nisabek/icinga2-slack-notifications/raw/master/docs/Notification-Examples-mobile.png" width="400">
 </p>
+
 * Notifications inside Slack about your Host and Service state changes
 * In case of failure get notified with the nicely-formatted output of the failing check
 * Easy integration with Icinga2
