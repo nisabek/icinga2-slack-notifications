@@ -1,19 +1,19 @@
 Package: icinga2-slack-notifications
-Version: 1.0.0
+Version: 1.0.1
 License: Apache License Version 2.0, January 2004
 Vendor: https://envimate.com/
 Architecture: all
 Maintainer: Nune Isabekyan <nisabek@gmail.com>, Richard Hauswald <richard.hauswald@gmail.com>
 Installed-Size: 8
-Depends: curl
+Depends: curl icinga2
 Homepage: https://github.com/nisabek/icinga2-slack-notifications
 Priority: extra
 Section: universe/admin
-Filename: pool/main/i/icinga2-slack-notifications/icinga2-slack-notifications_1.0.0_all.deb
-Size: 3510
-SHA256: 2cc45f961f880fafe4149e434a0c47dce36ec86f00218cefd6b10f5f849dacc0
-SHA1: 7ae5e162a06cd967e90cdb28807f0df93eb28eea
-MD5sum: 549cbaf973d7348aa14594f4b7f34f76
+Filename: pool/main/i/icinga2-slack-notifications/icinga2-slack-notifications_1.0.1_all.deb
+Size: 3512
+SHA256: 59a891030f1aa09bbf70fd7d7015a7ebcf6f8b9dfe71f637b552d6ffefb274f2
+SHA1: 1aaac4dfadac8c37eeed7bf9174715b75d9b8812
+MD5sum: 57743797f3e363e28d24d9e9cbbbb4e0
 Description: Icinga2 notification integration with slack
 Bugs: https://github.com/nisabek/icinga2-slack-notifications/issues
 
