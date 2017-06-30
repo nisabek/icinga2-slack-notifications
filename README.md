@@ -259,6 +259,10 @@ Besides configuring the slack-notifications parameters you can also configure ot
 parameters of the Host and Service, e.g.:
 * types
 * user_groups
+
+ > Please note that if user_group contains multiple users, the notifications will be sent _for each user_.
+ The solution would be to create a separate user_group containing a single user, in order not to get multiple slack-notifications.
+  
 * interval
 * period
 
