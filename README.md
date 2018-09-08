@@ -268,6 +268,11 @@ to collect the required data and send a message to configured slack channel usin
 
 The implementation can be found in `slack-notifications-command.conf` and it uses Lambdas!
 
+## Testing
+
+Since the official docker image of icinga2 seems not to be maintained, we've been using [jordan's icinga2 image](https://hub.docker.com/r/jordan/icinga2/)
+to test the notifications manually.
+
 ## Troubleshooting
 The slack-notifications command provides detailed debug logs. In order to see them, make sure the `debuglog` feature of icinga2 is enabled.
 
@@ -284,4 +289,4 @@ Use the following grep for troubleshooting:
 - [Enable Icinga2 Debug logging](https://docs.icinga.com/icinga2/latest/doc/module/icinga2/chapter/troubleshooting)
 - [NotificationCommand of Icinga2](https://docs.icinga.com/icinga2/latest/doc/module/icinga2/toc#!/icinga2/latest/doc/module/icinga2/chapter/object-types#objecttype-notificationcommand)
 - [Overriding template definitions of Icinga2](https://docs.icinga.com/icinga2/latest/doc/module/icinga2/toc#!/icinga2/latest/doc/module/icinga2/chapter/monitoring-basics#object-inheritance-using-templates)
-- [Dockerized Icinga2](https://hub.docker.com/r/icinga/icinga2/)
+- [Dockerized Icinga2](https://hub.docker.com/r/jordan/icinga2/)
