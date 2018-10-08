@@ -273,6 +273,25 @@ The implementation can be found in `slack-notifications-command.conf` and it use
 Since the official docker image of icinga2 seems not to be maintained, we've been using [jordan's icinga2 image](https://hub.docker.com/r/jordan/icinga2/)
 to test the notifications manually.
 
+Usual procedure for us to test the plugin is to 
+
+* configure the `src/slack-notifications/slack-notifications-configuration.conf` file according to documentation
+* configure a test `src/templates.conf` which contains the slack-notifications enabled for host and/or service
+* run the `jordan/icinga2` with an empty volume at first
+* copy the configurations to relevant directories
+* restart the container
+
+```bash
+ docker run -p 8081:80 --name slack-enabled-icinga2 -v $PWD/icinga2-docker-volume:/etc/icinga2 -idt jordan/icinga2:latest
+ docker cp src/templates.conf slack-enabled-icinga2:/etc/icinga2/conf.d/
+ docker cp src/slack-notifications slack-enabled-icinga2:/etc/icinga2/conf.d/
+ docker restart slack-enabled-icinga2
+```
+
+after that navigate to `http://localhost:8081/icingaweb2` and try out some notifications. 
+
+We understand that this is far from automated testing, and we will be happy to any contributions that would improve the procedure.
+
 ## Troubleshooting
 The slack-notifications command provides detailed debug logs. In order to see them, make sure the `debuglog` feature of icinga2 is enabled.
 
@@ -283,6 +302,8 @@ After that you should see the logs in `/var/log/icinga2/debug.log` file. All the
 Use the following grep for troubleshooting: 
 
 `grep "warning/PluginNotificationTask\|slack-notifications" /var/log/icinga2/debug.log`
+
+`tail -f /var/log/icinga2/debug.log | grep "warning/PluginNotificationTask\|slack-notifications"`
 
 ## Useful links
 - [Setup Slack Webhook](https://api.slack.com/incoming-webhooks)
