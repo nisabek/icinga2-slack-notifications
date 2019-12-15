@@ -60,6 +60,9 @@ We found the following 2 existing Icinga2 to Slack integrations.
 
 ### Installation using Debian package
 
+> !NOTE: At this moment debian package is behind the master code. If you want to use this plugin with Icinga Director, please make sure to install from Git (see below)
+We're working on updating the repo in the meantime. 
+
 We use [reprepro](https://mirrorer.alioth.debian.org/) to distribute our package from github.
 You would need to install `apt-transport-https` that supports adding an `https` based repository to the debian repo list.
 
@@ -311,3 +314,13 @@ Use the following grep for troubleshooting:
 - [NotificationCommand of Icinga2](https://docs.icinga.com/icinga2/latest/doc/module/icinga2/toc#!/icinga2/latest/doc/module/icinga2/chapter/object-types#objecttype-notificationcommand)
 - [Overriding template definitions of Icinga2](https://docs.icinga.com/icinga2/latest/doc/module/icinga2/toc#!/icinga2/latest/doc/module/icinga2/chapter/monitoring-basics#object-inheritance-using-templates)
 - [Dockerized Icinga2](https://hub.docker.com/r/jordan/icinga2/)
+
+## Running with Icinga Director
+
+There has been some discussion [over here](https://github.com/nisabek/icinga2-slack-notifications/issues/5) on how to run the plugin with Icinga Director. We'd appreciate somebody going over this part of documentation and verifying it. 
+ 
+Main points to make it work:
+
+* Use the git version, not the debian package.
+* Create custom variable for slack_notifications as a string. 
+* Run the kickstart wizzard: https://github.com/nisabek/icinga2-slack-notifications/issues/5#issuecomment-369571754
