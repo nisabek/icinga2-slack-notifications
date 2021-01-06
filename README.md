@@ -324,3 +324,16 @@ Main points to make it work:
 * Use the git version, not the debian package.
 * Create custom variable for slack_notifications as a string. 
 * Run the kickstart wizzard: https://github.com/nisabek/icinga2-slack-notifications/issues/5#issuecomment-369571754
+
+### Latest how-to on Icinga Director
+
+Thanks a lot to @jwhitbread for putting down these steps in the [issue](https://github.com/nisabek/icinga2-slack-notifications/issues/32)
+
+* Use the git version, not the debian package.
+* Add all three files into your global_templates directory e.g /etc/icinga2/zones.d/global_templates/. (I believe these can also be put into your director/master directory)
+* Follow the above tutorial with editing said files and permissions.
+* Add the vars.slack_notifications = "enabled" to the relevant templates or directly to the host/service objects.
+* Restart icinga2 - systemctl restart icinga2.
+* Navigate over to your icinga web interface > Icinga director on the left > Deployments
+* This should notify you that you have a change, click deploy. If it doesn't then on the same page navigate to Render config > Deploy anyways.
+* Check the console output of the deployment, green tick = good! Go double check your hosts and services are picking up the new variable and then give it a test!
