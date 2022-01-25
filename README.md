@@ -85,7 +85,7 @@ This will create the plugin files in the correct `icinga2` conf directory.
 
 ### Installation using git
 
-1. Clone the repository under `/opt` and copy the relevant folder into your Icinga2 `/etc/icinga2/conf.d` directory
+1. Clone the repository and copy the relevant folder into your Icinga2 `/etc/icinga2/conf.d` directory
  
 ```
 # git clone git@github.com:nisabek/icinga2-slack-notifications.git /opt/icinga2-slack-notifications
