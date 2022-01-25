@@ -128,7 +128,7 @@ foo@bar:~# icinga2 feature enable FEATURE_NAME
 #### Notification configuration
 
 1. Configure Slack Webhook and Icinga2 web URLs in `/etc/icinga2/conf.d/slack-notifications/slack-notifications-user-configuration.conf`
-```
+```php
 template Notification "slack-notifications-user-configuration" {
     import "slack-notifications-default-configuration"
 
@@ -140,7 +140,7 @@ template Notification "slack-notifications-user-configuration" {
 
 2. In order to enable the slack-notifications **for Services** add `vars.slack_notifications = "enabled"` to your Service template, e.g. in `/etc/icinga2/conf.d/templates.conf`
 
-```
+```php
  template Service "generic-service" {
    max_check_attempts = 5
    check_interval = 1m
@@ -152,7 +152,7 @@ template Notification "slack-notifications-user-configuration" {
 
 In order to enable the slack-notifications **for Hosts** add `vars.slack_notifications = "enabled"` to your Host template, e.g. in `/etc/icinga2/conf.d/templates.conf`
 
-```
+```php
  template Host "generic-host" {
    max_check_attempts = 5
    check_interval = 1m
@@ -175,7 +175,7 @@ You can customize the following parameters of slack-notifications :
   * slack_notifications_botname [Default: `icinga2`]
   * slack_notifications_plugin_output_max_length [Default: `3500`]
   * slack_notifications_icon_dictionary [Default:
-   ```
+   ```php
      {
          "DOWNTIMEREMOVED" = "leftwards_arrow_with_hook",
          "ACKNOWLEDGEMENT" = "ballot_box_with_check",
@@ -201,7 +201,7 @@ The `slack-notifications-user-configuration` section applies to both Host and Se
 
 _Example channel name configuration for Service notifications_
 
-``` 
+```php
 template Notification "slack-notifications-user-configuration" {
     import "slack-notifications-default-configuration"
 
@@ -228,7 +228,7 @@ You can choose to override the whole icon dictionary, or override specific types
 
 _Example override the whole icon dictionary_
 
-```
+```php
 template Notification "slack-notifications-user-configuration" {
     import "slack-notifications-default-configuration"
 
@@ -251,7 +251,7 @@ template Notification "slack-notifications-user-configuration" {
 
 _Example override specific type_
 
-```
+```php
 template Notification "slack-notifications-user-configuration" {
     import "slack-notifications-default-configuration"
 
