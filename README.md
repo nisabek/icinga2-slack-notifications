@@ -68,7 +68,7 @@ You would need to install `apt-transport-https` that supports adding an `https` 
 
 here are the steps to perform:
 
-```bash
+```
 # apt-get install -y apt-transport-https
 # apt-key adv --keyserver keyserver.ubuntu.com --recv-keys 10779AB4
 # add-apt-repository "deb https://raw.githubusercontent.com/nisabek/icinga2-slack-notifications/master/reprepro general main"
